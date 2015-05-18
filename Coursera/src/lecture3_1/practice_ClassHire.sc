@@ -4,8 +4,8 @@ object practice_ClassHire {
 
 val t1 = new NonEmpty(3, new Empty, new Empty)    //> t1  : lecture3_1.NonEmpty = {.3.}
 val t2 = t1 incl 4                                //> t2  : lecture3_1.IntSet = {.3{.4.}}
-
-
+val t3 = t2 incl 7                                //> t3  : lecture3_1.IntSet = {.3{.4{.7.}}}
+val t4 = t3 incl 5                                //> t4  : lecture3_1.IntSet = {.3{.4{{.5.}7.}}}
 }
 
 abstract class IntSet

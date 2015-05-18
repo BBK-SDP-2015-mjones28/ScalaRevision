@@ -3,9 +3,9 @@ package lecture3_1
 object practice_ClassHire {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(95); 
 
 val t1 = new NonEmpty(3, new Empty, new Empty);System.out.println("""t1  : lecture3_1.NonEmpty = """ + $show(t1 ));$skip(19); 
-val t2 = t1 incl 4;System.out.println("""t2  : lecture3_1.IntSet = """ + $show(t2 ))}
-
-
+val t2 = t1 incl 4;System.out.println("""t2  : lecture3_1.IntSet = """ + $show(t2 ));$skip(19); 
+val t3 = t2 incl 7;System.out.println("""t3  : lecture3_1.IntSet = """ + $show(t3 ));$skip(19); 
+val t4 = t3 incl 5;System.out.println("""t4  : lecture3_1.IntSet = """ + $show(t4 ))}
 }
 
 abstract class IntSet
